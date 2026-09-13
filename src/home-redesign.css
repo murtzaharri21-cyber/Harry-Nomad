@@ -1,0 +1,217 @@
+/* Homepage art direction: a sunlit alpine editorial cover. */
+.hero-section {
+  min-height: 760px;
+  height: 100svh;
+  max-height: 920px;
+  grid-template-columns: 46% 54%;
+  background: #f1eee6;
+  color: #203334;
+  isolation: isolate;
+}
+
+.hero-section:before {
+  content: 'NORTH / 01';
+  position: absolute;
+  left: 6vw;
+  bottom: 34px;
+  color: #9b6d52;
+  font-size: 9px;
+  letter-spacing: .2em;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  z-index: 5;
+}
+
+.topbar {
+  color: #203334;
+  padding: 0 6vw;
+}
+
+.brand-mark {
+  border-color: rgba(32,51,52,.45);
+}
+
+.nav-links button,
+.admin-link {
+  color: rgba(32,51,52,.7);
+}
+
+.nav-links button:after {
+  background: #bd6848;
+}
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 120px 7vw 70px 12vw;
+  z-index: 3;
+}
+
+.hero-copy h1 {
+  max-width: 560px;
+  color: #203334;
+  font-size: clamp(4.7rem, 8vw, 8.2rem);
+  line-height: .83;
+  margin: 30px 0 29px;
+}
+
+.hero-copy h1 em {
+  color: #bd6848;
+}
+
+.hero-intro {
+  max-width: 350px;
+  color: #63736e;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.hero-actions {
+  margin-top: 34px;
+}
+
+.hero-copy .watch-button {
+  color: #34504e;
+}
+
+.hero-copy .play-icon {
+  border-color: rgba(52,80,78,.45);
+}
+
+.hero-note {
+  margin-top: 64px;
+  color: #7a8b83;
+}
+
+.hero-visual {
+  height: calc(100% - 32px);
+  margin: 16px 16px 16px 0;
+  border-radius: 2px 44px 2px 44px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(26,55,57,.17);
+  background: #4d7b7b;
+}
+
+.hero-image-wrap img {
+  filter: saturate(1.08) contrast(1.12) brightness(1.03);
+  transform: scale(1.02);
+}
+
+.image-shade {
+  background: linear-gradient(90deg, rgba(16,42,43,.28), transparent 40%), linear-gradient(0deg, rgba(10,25,26,.46), transparent 48%);
+}
+
+.hero-caption {
+  bottom: 26px;
+  left: 8%;
+  right: 8%;
+  border-top-color: rgba(255,255,255,.4);
+  color: rgba(255,255,255,.9);
+}
+
+.hero-stamp {
+  top: 12%;
+  right: 9%;
+  border-color: rgba(255,255,255,.65);
+}
+
+.primary-button {
+  background: #bd6848;
+}
+
+.primary-button:hover {
+  background: #9e5138;
+}
+
+.hero-scroll {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .hero-section {
+    min-height: 760px;
+    height: auto;
+    grid-template-columns: 46% 54%;
+  }
+
+  .hero-copy {
+    padding: 145px 24px 80px 8vw;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(3.5rem, 7vw, 5.8rem);
+  }
+
+  .hero-visual {
+    margin: 88px 12px 12px 0;
+    height: calc(100% - 100px);
+  }
+}
+
+@media (max-width: 640px) {
+  .topbar {
+    color: #f8f3e8;
+  }
+
+  .brand-mark {
+    border-color: rgba(255,255,255,.55);
+  }
+
+  .hero-section {
+    display: block;
+    min-height: 760px;
+    height: 100svh;
+    max-height: none;
+    background: #182829;
+  }
+
+  .hero-section:before {
+    display: none;
+  }
+
+  .hero-visual {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    height: 100%;
+    border-radius: 0;
+    opacity: 1;
+    box-shadow: none;
+  }
+
+  .hero-copy {
+    min-height: 760px;
+    padding: 155px 8vw 70px;
+    justify-content: center;
+    color: #fff8ed;
+  }
+
+  .hero-copy h1 {
+    color: #fff8ed;
+    font-size: clamp(4.3rem, 18vw, 6.1rem);
+  }
+
+  .hero-copy h1 em {
+    color: #f1b28c;
+  }
+
+  .hero-intro {
+    color: #d0d9d3;
+  }
+
+  .hero-note {
+    color: #bfcbc3;
+  }
+
+  .hero-caption {
+    bottom: 26px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-visual,
+  .hero-image-wrap {
+    transform: none;
+  }
+}
