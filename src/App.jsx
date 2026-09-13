@@ -386,7 +386,7 @@ function App() {
           </div>
           <div className="hero-visual" id="film" ref={heroVisualRef}>
             <div className="hero-image-wrap">
-              <img src={getImage('hero', '/images/pinterest-hunza-window.jpg')} onError={(event) => useFallbackImage(event, fallbackImages[4])} alt="Hunza Valley viewed through a traditional wooden frame" />
+              <img src={getImage('hero', '/images/hunza-hero-new.png')} onError={(event) => useFallbackImage(event, fallbackImages[4])} alt="Golden-hour view of Hunza Valley with the Karakoram peaks" />
               <div className="image-shade" />
             </div>
             <div className="hero-stamp"><Compass size={16} /><span>GB / 01</span></div>
