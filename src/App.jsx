@@ -192,7 +192,7 @@ function App() {
   const heroVisualRef = useRef(null)
 
   const imageSlots = [
-    { key: 'hero', label: 'Homepage hero', group: 'Front page', src: '/images/pinterest-hunza-window.jpg' },
+    { key: 'hero', label: 'Homepage hero', group: 'Front page', src: '/images/hunza-real.jpg' },
     { key: 'story', label: 'Story image', group: 'History section', src: '/images/baltit-fort.jpg' },
     { key: 'heritage-baltit', label: 'Baltit autumn', group: 'Heritage gallery', src: '/images/baltit-autumn.jpg' },
     { key: 'heritage-altit', label: 'Altit from above', group: 'Heritage gallery', src: '/images/altit-top.jpg' },
@@ -386,7 +386,7 @@ function App() {
           </div>
           <div className="hero-visual" id="film" ref={heroVisualRef}>
             <div className="hero-image-wrap">
-              <img src={getImage('hero', '/images/pinterest-hunza-window.jpg')} onError={(event) => useFallbackImage(event, fallbackImages[4])} alt="Hunza Valley viewed through a traditional wooden frame" />
+              <img src={getImage('hero', '/images/hunza-real.jpg')} onError={(event) => useFallbackImage(event, fallbackImages[4])} alt="Real view of Hunza Valley from Eagle's Nest with the Karakoram peaks and Hunza river" />
               <div className="image-shade" />
             </div>
             <div className="hero-stamp"><Compass size={16} /><span>GB / 01</span></div>
